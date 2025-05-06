@@ -1,0 +1,84 @@
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(white, blueviolet);
+  padding: 2rem;
+}
+
+.app-wrapper h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #333;
+}
+
+.form-wrapper {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+.coffee-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.coffee-form label {
+  display: flex;
+  flex-direction: column;
+  color: #444;
+}
+
+.coffee-form select,
+.coffee-form input[type="text"],
+.coffee-form input[type="email"] {
+  margin-top: 6px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fefefe;
+  transition: border 0.2s ease;
+}
+
+
+
+.coffee-form select:focus,
+.coffee-form input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.coffee-form button {
+  padding: 14px;
+
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.coffee-form button:hover {
+  background-color: #0056b3;
+}
+
+.coffee-form input[type="range"] {
+  margin: 10px;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin: 0;
+}
+
+select {
+  color: #000;
+}
