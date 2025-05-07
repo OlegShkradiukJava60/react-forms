@@ -1,13 +1,14 @@
-import { useState } from "react";
+import { useState } from 'react'
 
-import "./App.css";
-import CoffeeOrderForm from "./components/coffee-order-form/CoffeeOrderForm";
-import CoffeeOrder from "./model/CoffeeOrder";
+import './App.css'
+import EmployeeForm from './components/employee-form/EmployeeForm'
+import Employee from './model/Employee'
 
 function App() {
+ 
   return (
-    <CoffeeOrderForm submitter={(order: CoffeeOrder) => console.log(order)} />
-  );
+   <EmployeeForm submitter={(empl: Employee) => console.log(empl)}/>
+  )
 }
 
-export default App;
+export default App
