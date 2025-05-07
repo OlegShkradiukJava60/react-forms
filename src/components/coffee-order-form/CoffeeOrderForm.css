@@ -1,0 +1,13 @@
+input, select {
+    display: block
+}
+.error {
+    color: red;
+}
+input, select, button {
+    margin: 30px
+}
+#strength {
+    margin: 0 5px;
+    display: inline-block;
+}
