@@ -1,12 +1,15 @@
-import { useState } from "react";
-
-import "./App.css";
-import CoffeeOrderForm from "./components/coffee-order-form/CoffeeOrderForm";
-import CoffeeOrder from "./model/CoffeeOrder";
+import { CoffeeOrderForm } from "./components/OrderCoffeeForm";
+import type { CoffeeOrder } from "./components/OrderCoffeeForm";
 
 function App() {
+  const handleSubmit = (order: CoffeeOrder) => {
+    console.log("Сustomer order :", order);
+  };
+
   return (
-    <CoffeeOrderForm submitter={(order: CoffeeOrder) => console.log(order)} />
+    <div>
+      <CoffeeOrderForm submitter={handleSubmit} />
+    </div>
   );
 }
 
