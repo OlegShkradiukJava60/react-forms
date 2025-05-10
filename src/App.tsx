@@ -1,5 +1,5 @@
-import { CoffeeOrderForm } from "./components/OrderCoffeeForm";
-import type { CoffeeOrder } from "./components/OrderCoffeeForm";
+import { CoffeeOrderForm } from "./components/CoffeeOrderForm";
+import type { CoffeeOrder } from "./components/CoffeeOrderForm";
 
 function App() {
   const handleSubmit = (order: CoffeeOrder) => {
